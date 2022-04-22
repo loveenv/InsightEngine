@@ -1,7 +1,8 @@
 import pytesseract as tess
 from PIL import Image
-img = Image.open('IMG_20160506_181223.JPG')
-text = tess.image_to_string(img)
+image = Image.open('pic.JPG')
+
+text = tess.image_to_string(image)
 print(text)
 print('123abc')
 print(tess.__version__)
